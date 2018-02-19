@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="calender.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<ul>
+    <li><a href="index.php">Dienstkalender</a></li>
+    <li><a href="zeiterfassung.php">Zeiterfassung</a></li>
+    <li><a href="index.php">Kalender</a></li>
+    <li><a href="Mitarbeiterverwaltung.php">Mitarbeiterverwaltung</a></li>
+    <li><a href="Mitarbeiterverwaltung.php">Neuen Mitarbeiter anlegen</a></li>
+    <li><a href="Main.html">Krankmeldung/Urlaubsanfrage</a></li>
+    <li style="float:right"><a href="Logout.php">Abmelden</a></li>
+</ul>
+<form id="Antrag" action="funk.php" method="post">
+    Urlaub von:<br>
+    <input type="date" name="von"><br>
+    Urlaub bis:<br>
+    <input type="date" name="bis"><br>
+    Typ:<br>
+    <select type="text" name="typ">
+        <option value="k">Krankheit</option>
+        <option value="u">Urlaub</option>
+        <option value="a">Andere</option>
+    </select><br>
+    Grund:<br>
+    <textarea type="text" name="grund" cols="40" rows="5"></textarea><br>
+    <input type="submit" value="submit">
+</form>
+</body>
+</html>
